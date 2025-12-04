@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ColorCraz - Professional Graphic Design Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Full-screen Background Image -->
+<div class="background-image"></div>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">ColorCraz</div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#catalog" class="nav-link">Catalog</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Grow Your Business<span>Digitally</span></h1>
+        <p>Crafting visuals that inspire – Let’s see differently</p>
+        <div class="hero-buttons">
+            <a href="#catalog" class="btn-primary">Explore Templates</a>
+            <a href="#contact" class="btn-secondary">Get Started Free</a>
+        </div>
+    </div>
+
+    <!-- FLOATING CARDS WITH REAL IMAGES (UPDATED & BEAUTIFUL) -->
+    <div class="hero-image">
+        <div class="floating-card">
+            <img src="images/1.png" alt="Design Mockup 1">
+        </div>
+        <div class="floating-card">
+            <img src="images/2.png" alt="Design Mockup 2">
+        </div>
+        <div class="floating-card">
+            <img src="images/3.png" alt="Design Mockup 3">
+        </div>
+    </div>
+</section>
+
+<!-- About Us -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>We are a team of passionate designers and developers dedicated to making professional graphic design accessible to everyone.</p>
+                <p>With over 10,000+ templates and smart AI tools, you can create logos, social media posts, banners, business cards, and more — in minutes.</p>
+                <div class="stats">
+                    <div><strong>50K+</strong> Users</div>
+                    <div><strong>10K+</strong> Templates</div>
+                    <div><strong>24/7</strong> Support</div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="mockup"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Catalog -->
+<section id="catalog" class="catalog">
+    <div class="container">
+        <h2 class="section-title">Premium Template Packs</h2>
+        <div class="catalog-grid">
+            <div class="template-card">
+                <div class="template-thumb" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+                <h3>Social Media Pro Pack</h3>
+                <p>100+ Instagram & Facebook templates</p>
+                <div class="price">$49</div>
+                <button class="btn-buy">Buy Now</button>
+            </div>
+            <div class="template-card featured">
+                <div class="badge">Best Seller</div>
+                <div class="template-thumb" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+                <h3>Brand Identity Suite</h3>
+                <p>Logo, Business Card, Letterhead + More</p>
+                <div class="price">$89 <span class="old-price">$149</span></div>
+                <button class="btn-buy">Buy Now</button>
+            </div>
+            <div class="template-card">
+                <div class="template-thumb" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+                <h3>Presentation Master</h3>
+                <p>50+ Modern PowerPoint & Keynote Templates</p>
+                <div class="price">$59</div>
+                <button class="btn-buy">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="reviews">
+    <div class="container">
+        <h2 class="section-title">What Our Users Say</h2>
+        <div class="reviews-carousel">
+            <div class="review active">
+                <p>"ColorCraz saved me hundreds of hours. The templates are stunning and fully customizable!"</p>
+                <div class="author">- Sarah M., Marketing Director</div>
+            </div>
+            <div class="review">
+                <p>"Best design platform I've used. Clean UI, powerful tools, and amazing support."</p>
+                <div class="author">- James K., Freelance Designer</div>
+            </div>
+            <div class="review">
+                <p>"From zero to pro-looking brand in one weekend. Highly recommend!"</p>
+                <div class="author">- Lisa Chen, Startup Founder</div>
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>© 2025 ColorCraz. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
